@@ -69,7 +69,7 @@ export const addOrder = async (req, res) => {
       code: "ABC" + Math.floor(Math.random() * 999),
       arr_sub_id: "DEF" + Math.floor(Math.random() * 999)
   }
-  let data = await model.order_order.create(newData)
+  let data = await model.orders.create(newData)
 
   res.send(data)
 }
