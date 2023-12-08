@@ -94,7 +94,7 @@ export const likeRes = async (req, res) => {
           id: id,
           user_id: userId,
           res_id: resId,
-          date_like: new Date()
+          data_like: new Date()
       }
       await model.like_res.create(newData)
       return res.send(true)
